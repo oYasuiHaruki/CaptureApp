@@ -1,7 +1,10 @@
 class CapturesController < ApplicationController
 
   def index
-    @url = Capture.find(1)
+    @urls = Capture.all
+  end
+
+  def capture
   end
 
 end

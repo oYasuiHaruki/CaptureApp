@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20180425074612) do
 
   create_table "captures", force: :cascade do |t|
-    t.string   "captureUrl", limit: 255
+    t.text     "captureUrl", limit: 65535
     t.datetime "created_at"
     t.datetime "updated_at"
   end

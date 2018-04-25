@@ -1,3 +1,6 @@
 <div class="contents row">
-  <p><%= @url.captureUrl %></p>
+  <% @urls.each do |url| %>
+    <div class="content_post" style="background-image: url(<%= url.captureUrl %>);">
+    </div>
+  <% end -%>
 </div>
